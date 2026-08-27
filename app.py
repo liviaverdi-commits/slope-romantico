@@ -13,7 +13,7 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     # Link de um clone idêntico e funcional do Slope 3D
-    slope_url = "https://slopegame.online"
+    slope_url = "https://sloperun2.io/"
     components.iframe(slope_url, height=600, scrolling=False)
 
 with col2:
