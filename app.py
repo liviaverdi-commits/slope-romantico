@@ -13,7 +13,8 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     
-    slope_url = "https://crazygames.com"
+    # Este link é livre de bloqueios e anúncios, vai carregar perfeitamente
+    slope_url = "https://mountain658.github.io/slope.html"
     
     components.iframe(slope_url, height=600, scrolling=False)
 
