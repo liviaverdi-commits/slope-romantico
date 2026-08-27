@@ -13,8 +13,8 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     
-    # O link limpo e direto que descobrimos inspecionando o site!
-    slope_url = "https://sloperun2.io"
+    # Link direto do arquivo do jogo, sem nenhuma página ou anúncio ao redor
+    slope_url = "https://jsdelivr.net"
     
     components.iframe(slope_url, height=600, scrolling=False)
 
