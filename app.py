@@ -13,17 +13,10 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     
-    html_enquadrado = """
-    <div style="width: 100%; height: 600px; overflow: hidden; position: relative; border: 3px solid #00ff00; border-radius: 10px;">
-        <iframe 
-            src="https://sloperun2.io" 
-            style="position: absolute; top: 120px; left: 0; width: 100%; height: 800px; border: none;"
-            scrolling="no">
-        </iframe>
-    </div>
-    """
+    # O link limpo e direto que descobrimos inspecionando o site!
+    slope_url = "https://sloperun2.io"
     
-    components.html(html_enquadrado, height=600)
+    components.iframe(slope_url, height=600, scrolling=False)
 
 with col2:
     st.subheader("🏆 Sua Pontuação")
