@@ -13,8 +13,7 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     
-    # Link direto do arquivo do jogo, sem nenhuma página ou anúncio ao redor
-    slope_url = "https://jsdelivr.net"
+    slope_url = "https://crazygames.com"
     
     components.iframe(slope_url, height=600, scrolling=False)
 
