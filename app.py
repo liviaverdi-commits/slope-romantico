@@ -13,8 +13,7 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     
-    # Criando uma caixinha com tamanho controlado e escondendo as bordas de fora
-        html_enquadrado = """
+    html_enquadrado = """
     <div style="width: 100%; height: 600px; overflow: hidden; position: relative; border: 3px solid #00ff00; border-radius: 10px;">
         <iframe 
             src="https://sloperun2.io" 
@@ -23,6 +22,8 @@ with col1:
         </iframe>
     </div>
     """
+    
+    components.html(html_enquadrado, height=600)
 
 with col2:
     st.subheader("🏆 Sua Pontuação")
