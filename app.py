@@ -13,10 +13,18 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Clique na tela e use as setas do teclado para jogar:")
     
-    # Este link é livre de bloqueios e anúncios, vai carregar perfeitamente
-    slope_url = "https://mountain658.github.io/slope.html"
+    # Criamos uma caixinha com tamanho controlado que esconde o topo
+    html_enquadrado = """
+    <div style="width: 100%; height: 560px; overflow: hidden; position: relative; border: 3px solid #00ff00; border-radius: 10px;">
+        <iframe 
+            src="https://github.io" 
+            style="position: absolute; top: -45px; left: 0; width: 100%; height: 605px; border: none;"
+            scrolling="no">
+        </iframe>
+    </div>
+    """
     
-    components.iframe(slope_url, height=600, scrolling=False)
+    components.html(html_enquadrado, height=565)
 
 with col2:
     st.subheader("🏆 Sua Pontuação")
