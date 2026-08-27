@@ -25,7 +25,7 @@ with col2:
     st.divider()
     
     # Sistema inteligente que escolhe a foto e o texto com base nas suas faixas
-    if 0 <= score <= 10:
+    if 1 <= score <= 10:
         st.image("https://i.postimg.cc/4xLgJsXS/1.jpg", caption="Nossa primeira foto") # COLOQUE O LINK DA FOTO 1
         st.subheader("❤️ De 0 a 10 pontos:")
         st.write("Escreva aqui o seu primeiro texto romântico para quando o score for baixo...") # COLOQUE SEU TEXTO 1
